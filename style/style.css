@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+
+    width: 12.5%;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid #000;
+    font-size: 18px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+    font-size: 0px
+}
+
+article {
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section:nth-child(odd) div:nth-child(odd),
+section:nth-child(even) div:nth-child(even) {
+    color: #000;
+    background-color: #fff;
+    background-image: url("../img/chess-deck-white.jpg");
+}
+
+section:nth-child(even) div:nth-child(odd),
+section:nth-child(odd) div:nth-child(even) {
+    color: #fff;
+    background-color: #000;
+    background-image: url("../img/chess-deck-black.jpg");
+}
